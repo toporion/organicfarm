@@ -44,18 +44,19 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter (popping out) */}
+          {/* Newsletter */}
           <div className="relative">
-            <div className="absolute -right-1/3 top-0 w-[120%] md:w-[140%] bg-yellow-400 text-black p-6 rounded-xl shadow-lg">
+            {/* Default: responsive block */}
+            <div className="w-full bg-yellow-400 text-black p-6 rounded-xl shadow-lg md:absolute md:-right-1/3 md:top-0 md:w-[140%]">
               <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
               <p className="text-sm mb-4">Subscribe to our newsletter to get the latest updates.</p>
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row">
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="flex-1 px-4 py-2 rounded-l-md focus:outline-none"
+                  className="flex-1 px-4 py-2 rounded-md sm:rounded-l-md sm:rounded-r-none focus:outline-none mb-3 sm:mb-0"
                 />
-                <button className="px-4 py-2 bg-green-700 text-white rounded-r-md hover:bg-green-800">
+                <button className="px-4 py-2 bg-green-700 text-white rounded-md sm:rounded-r-md sm:rounded-l-none hover:bg-green-800">
                   Subscribe
                 </button>
               </div>

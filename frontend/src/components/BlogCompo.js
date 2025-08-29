@@ -6,17 +6,17 @@ import blog3 from '../assets/blog-3.jpg';
 
 const blogs = [
   {
-    title: 'The Future of Web Development',
+    title: 'The Future of Organic farm',
     desc: 'Discover the latest trends in modern web development and how they are shaping the future.',
     image: blog1,
   },
   {
-    title: 'UI/UX Best Practices',
+    title: 'Eat fresh',
     desc: 'Learn essential principles of user interface and user experience design for better products.',
     image: blog2,
   },
   {
-    title: 'Boosting Productivity with React',
+    title: 'Fresh Tomato',
     desc: 'Tips and tricks to improve your efficiency while building apps with React.',
     image: blog3,
   },
