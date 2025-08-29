@@ -16,7 +16,7 @@ const ForAdminShowServices = () => {
     const fetchServices = async () => {
         try {
             setLoading(true);
-            const res = await axios.get(`http://localhost:8080/api/all_services?page=${page}&limit=${limit}`);
+            const res = await axios.get(`https://organicfarm-wal6.vercel.app/api/all_services?page=${page}&limit=${limit}`);
             setServices(res.data.data.services);
             setTotalPages(res.data.data.totalPages);
         } catch (error) {

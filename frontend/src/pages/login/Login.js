@@ -21,7 +21,7 @@ const Login = () => {
         return;
       }
       try {
-        const res = await axios.get(`http://localhost:8080/api/getUserByEmail?email=${email}`);
+        const res = await axios.get(`https://organicfarm-wal6.vercel.app/api/getUserByEmail?email=${email}`);
         if (res.data?.user?.image) {
           setPreview(res.data.user.image);
         } else {

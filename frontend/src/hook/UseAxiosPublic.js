@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const UseAxiosPublic = () => {
     const axiosPublic=axios.create({
-         baseURL: 'http://localhost:8080/api',
+         baseURL: 'https://organicfarm-wal6.vercel.app/api',
     })
     return axiosPublic;
 };

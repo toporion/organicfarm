@@ -19,7 +19,7 @@ const Register = () => {
       formData.append('profileImage', data.profileImage[0]);
     }
 
-    const res = await axios.post('http://localhost:8080/api/register', formData, {
+    const res = await axios.post('https://organicfarm-wal6.vercel.app/api/register', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
